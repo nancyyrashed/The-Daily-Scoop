@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script language = "javascript" type="text/javascript">
+
+    dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+    monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+    now = new Date
+
+    </script>
+    
+
+</head>
+    
+  <title>
+    home page
+  </title>
+    
+  <body>
+              
+              <div class="container">
+                  <div class="row">
+                    <div class="col-2">
+                        <!-- today's day -->
+                      <div class="day">
+                          <p1 class="p1">
+                            <script language = "javascript" type="text/javascript">
+                            document.write("" + dayName[now.getDay()]+", "+monName[now.getMonth()]+" "+now.getDate() + "." + "  2023")
+                            </script> 
+                          </p1>
+                      </div>
+                        <!--today's paper-->
+                         <p2 class="p2"> Today's paper </p2>
+                    </div>
+
+                    <div class="col-2">
+                        <!-- search bar -->    
+                           <header class="header">
+                              <section class="section">
+                                  <div class="search">
+                                      <input type="text" placeholder="search...">
+                                      <div class="icon1"></div>
+                                  </div>
+                                  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+                                  <script type="text/javascript">
+                                      $(document).ready(function(){
+                                          $('.icon1').click(function(){
+                                              $('.search').toggleClass('active')
+                                          })                      
+                                      }) 
+                                  </script>
+                               </section>
+                        </header>
+
+                    </div>
+
+                    <div class="col-4">
+                        <!-- barlist of languages -->
+                          <div class="bar">
+                          <ul class="barlist">
+                          <button class="englishbutton" onclick="window.location.href='english.html';"> english </button>
+                          <button class="arabicbutton" onclick="window.location.href='arabic.html';"> arabic </button>
+                          <button class="spanishbutton" onclick="window.location.href='español.html';"> español </button>
+                          <button class="chinesebutton" onclick="window.location.href='中国人.html';"> 中国人 </button>
+                          <button class="Portuguesebutton" onclick="window.location.href='Portuguese.html';"> Portuguese </button> 
+                          <button class="Deutschbutton" onclick="window.location.href='Deutsch.html';"> Deutsch </button>
+                          <button class="Italianbutton" onclick="window.location.href='Italian.html';"> Italian </button>
+                          </ul>
+                      </div>
+                    </div>
+                      
+                    <div class="col-2">
+                        <!-- subscribe button -->
+                            <button class="subscribe"> Subscribe weekly or monthly </button>
+                    </div>
+                      
+                    <div class="col-2">
+                        <!-- login button -->
+                            <button class="login"> Login </button>
+                      </div>
+                    
+                  </div>
+
+                  
+                  <div class="row">
+                    <div class="col-6">
+                         <!-- logo -->
+                        <img class="logo" alt="logo" src="logos/logo1.png">
+                    </div>
+                  
+                  <div class="col-6">
+                      <!-- social media icons -->
+                       <ul1>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-facebook-f icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                          <li>
+                            <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                    </ul1>         
+                    </div>
+                      </div>
+
+                  
+                  <div class="row">
+                      <div class="col-12">
+                          <!-- barlist of menu -->
+                              <ul class="barlist1">
+                                  <button class="worldbutton" onclick="window.location.href='index.html';"> world </button>
+                                  <button class="politicsbutton" onclick="window.location.href='politics.html';"> politics </button>
+                                  <button class="healthbutton" onclick="window.location.href='health.html';"> health </button>
+                                  <button class="sportsbutton" onclick="window.location.href='sports.html';"> sports </button>
+                                  <button class="artsbutton" onclick="window.location.href='arts.html';"> arts </button> 
+                                  <button class="sciencebutton" onclick="window.location.href='science.html';"> science </button>
+                                  <button class="realestatebutton" onclick="window.location.href='real_estate.html';"> real estate </button>
+                                  <button class="travelbutton" onclick="window.location.href='travel.html';"> travel </button> 
+                                  <button class="fashionbutton" onclick="window.location.href='fashion.html';"> fashion </button>
+                                  <button class="businessbutton" onclick="window.location.href='business.html';"> business </button>
+                                  <button class="weatherbutton" onclick="window.location.href='weather.html';"> weather </button>
+                                  <button class="foodbutton" onclick="window.location.href='food.html';"> food </button> 
+                                  <button class="booksbutton" onclick="window.location.href='books.html';"> books </button>
+                                  <button class="technologybutton" onclick="window.location.href='technology.html';"> technology </button>
+                              </ul>
+                      </div>
+                    </div>
+                  
+                  
+                          <!-- currency change rates bar -->
+                  <!--'Exchange Rates UK: Your Live Currency Exchange Rates Website', 2023. [source code]. https://www.exchangerates.org.uk/webmasters/live-forex-rates-ticker.html-->
+                  
+                            <!-- EXCHANGERATES.ORG.UK LIVE FOREX RATES TICKER START -->
+                    <div style="align-content: center; margin-left: 0%; margin-top: -1%;">
+                                <script type="text/javascript">	
+                                    var aff = 'none';
+                                    var w = '1296';
+                                    var s = '1';
+                                    var mbg = 'FFFFFF';
+                                    var bs = 'yes';
+                                    var bc = '000044';
+                                    var f = 'verdana';
+                                    var fs = '9px';
+                                    var fc = '000044';
+                                    var lc = '000000';
+                                    var lhc = 'FE9A00';
+                                    var vc = 'FE9A00';
+                                </script>
+                                <script type="text/javascript">
+                                 ccHost = (("https:" == document.location.protocol) ? "https://www." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + ccHost + "currency.me.uk/remote/CUK-LFOREXRTICKER-1.php' type='text/javascript'%3E%3C/script%3E"));
+                                </script>
+                            <!-- EXCHANGERATES.ORG.UK LIVE FOREX RATES TICKER END -->
+                         </div>
+                           
+      
+                <!-- trending bar -->
+                  <div class="row">
+                      <div class="col-1">
+                         <!-- trending title -->
+                          <h1 class="trending">
+                              <a href="trending.html">
+                                Trending 
+                              </a>
+                              <!-- vertical line after previous title -->
+                                <span class="vl" style="margin: 20%"> </span>
+                           </h1>
+                      </div>
+                      
+                      <div class="col-2">
+                          <!-- first trending news title -->
+                          <h2 class="trending1"> 
+                              <a href="Earthquakes_in_turkey_and_syria.html">
+                                Earthquakes in turkey and syria
+                              </a>
+                              <!-- vertical line after previous title -->
+                                <span class="vl1" style="margin: 15%"> </span>
+                          </h2>
+                      </div>
+                      
+                      <div class="col-3">
+                          <!-- second trending news title -->
+                          <h2 class="trending2"> 
+                              <a href="Russia's_war_in_Ukraine.html">
+                                Updates on Russia's war in Ukraine
+                              </a>
+                              <!-- vertical line after previous title -->
+                                <span class="vl2" style="margin: 8%"> </span>
+                          </h2>
+                      </div>
+                      
+                      <div class="col-4">
+                          <!-- third trending news title -->
+                          <h2 class="trending3"> 
+                              <a href="Russia's_war_in_Ukraine.html">
+                                Hailey Bieber and Selena Gomez drama
+                              </a>
+                              <!-- vertical line after previous title -->
+                                <span class="vl3" style="margin: 6%"> </span>
+                          </h2>
+                      </div>
+                      
+                      <div class="col-2">
+                          <!-- forth trending news title -->
+                          <h2 class="trending4"> 
+                              <a href="Russia's_war_in_Ukraine.html">
+                                Today's football match
+                              </a>
+                              <!-- vertical line after previous title -->
+                                <span class="vl4" style="margin: 5%"> </span>
+                          </h2>
+                      </div>  
+                  </div>
+            
+
+          <div class="row">
+              <div class="col-6">
+                  <!-- first news image 'mexico' -->
+                  <img class="news1" alt="news 1" src="news_images/news1.webp">
+              </div>
+              
+              <div class="col-3">
+                  <h7 class="h7">
+                      <!-- first news title 'mexico' -->
+                      <a href=" Mexico Hobbles Election Watchdog That Helped End One-Party Rule.html">
+                        <br>Mexico Hobbles Election <br> Watchdog That Helped <br> End One-Party Rule
+                      </a>
+                  </h7> 
+                  <!-- first news paragraph 'mexico' -->
+                  <p class="pnews1">
+                  <a href=" Mexico Hobbles Election Watchdog That Helped End One-Party Rule.html">
+                          Mexican lawmakers passed sweeping <br> measures overhauling the nation’s <br> electoral agency, dealing a blow <br> to the institution that oversees voting.
+                          <br>
+                          <br>
+                          The changes come ahead of next year’s <br> presidential election and are part <br> of a pattern of challenges to democratic <br> institutions across the Western Hemisphere.
+                      </a>
+                  </p>
+              </div>
+              
+              <div class="col-1">
+                  <!--vertical line between weather and news-->
+                  <div class="vl6"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- weather -->
+                  <!--tomorrow companies,' Free Weather Widgets for Websites', [source code]. https://www.tomorrow.io/weather/widget/-->
+               <script>
+                    (function(d, s, id) {
+                        if (d.getElementById(id)) {
+                            if (window.TOMORROW) {
+                                window.TOMORROW.renderWidget();
+                            }
+                            return;
+                        }
+                        const fjs = d.getElementsByTagName(s)[0];
+                        const js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                        fjs.parentNode.insertBefore(js, fjs);
+                    })(document, 'script', 'tomorrow-sdk');
+                    </script>
+
+                    <div class="tomorrow"
+                       data-location-id="031802,050388,044856,126992,013455,064500"
+                       data-language="EN"
+                       data-unit-system="METRIC"
+                       data-skin="light"
+                       data-widget-type="current6"
+                       style="width: 100%; height: 100%; min-width: 320px; margin-left: -30%; margin-top: 6%;"
+                    >
+                      <a
+                        href="https://www.tomorrow.io/weather-api/"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+                      >
+                        <img
+                          alt="Powered by the Tomorrow.io Weather API"
+                          src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+                          width="0"
+                          height="0"
+                        />
+                      </a>
+                    </div>
+                 </div>
+             </div>
+      
+          <div class="row">
+              <div class="col-6">
+                  <!-- horizontal line after first news -->
+                  <div class="vl7"> </div>
+              </div>
+              
+              <div class="col-6">
+                  <!-- horizontal line after weather -->
+                  <div class="vl8"> </div>
+              </div>
+          </div>
+      
+      <!-- latest news part -->
+          <div class="row">
+              <div class="col-2">
+                  <!-- horizontal line top latest title -->
+                  <div class="vl9"> </div>
+                  <!-- latest title -->
+                  <h6 class="latest">
+                              <a href="latest.html">
+                                Latest
+                              </a></h6>
+                  <!-- horizontal line under latest title -->
+                  <div class="vl10"> </div>
+                  <!-- latest news 'markets' title -->
+                  <p class="market"> Markets </p>
+                  <!-- latest news 'markets' paragraph -->
+                  <p class="pnews3"> 
+                      <a href="latestnews.html">
+                            Warnings of a <br> Stock Market <br> Bubble Finally <br> Prove Too Much <br> for S&P 500
+                      </a></p>
+                  <!-- horizontal line at the end of 'markets' -->
+                  <div class="vl11"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- picture of second news 'gulf' -->
+                  <img class="news2" alt="news2" src="news_images/news2.jpg">
+              </div>
+              
+              <div class="col-4">
+                  <!-- title of second news 'gulf' -->
+                  <p class="pnews2"> 
+                      <a href="latestnews.html">
+                          <br>
+                      Gulf States Play Hardball Over <br> Sending Billions to Rescue Egypt
+                      </a></p>
+                  <!-- paragraphs of second news 'gulf' -->
+                  <h2 class="latestnews">
+                              <a href="latestnews.html">
+                                Egypt Likely to Devalue Currency Again, Societe Generale Says
+                                  <br>
+                                  <br>
+                                Saudi Talks on Buying Egypt’s United Bank Stall Over Pound
+                                  <br>
+                                  <br>
+                                How to Know Where Egypt’s Once-in-Decade Crisis Is Heading
+                              </a></h2>
+              </div>
+
+              <div class="col-2">
+                  <!-- first news image at the right part -->
+                  <img class="news4" alt="news4" src="news_images/news3.webp">
+                  <!-- first news paragraph at the right part -->
+                  <p class="pnews4"> 
+                      <a href="news4.html">
+                            The new “Party Down” highlights the sadness <br> of the sitcom revival.
+                      </a></p>
+                  <!-- horizontal line under right part news -->
+                  <div class="vl12"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- second news image at the right part -->
+                  <img class="news5" alt="news5" src="news_images/news4.webp">
+                  <!-- second news paragraph at the right part -->
+                  <p class="pnews5"> 
+                      <a href="news5.html">
+                            A legendary Brazilian publisher’s memoir explores private torment.
+                      </a></p>
+              </div>
+              
+          </div>
+      
+      
+          <div class="row">
+              <div class="col-2">
+                  <!-- latest news 'Hyperdrive' title -->
+                  <p class="Hyperdrive"> Hyperdrive </p>
+                  <!-- latest news 'Hyperdrive' paragraph -->
+                  <p class="pnews6"> 
+                      <a href="news6.html">
+                            Tesla Investor <br> Gerber to Drop <br> Bid for Board <br> Seat at EV <br> Maker
+                      </a></p>
+                  <!-- horizontal line at the end of 'Hyperdrive' -->
+                  <div class="vl13"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- latest news 'Economics' title -->
+                  <p class="Economics"> Economics </p>
+                  <!-- latest news 'Economics' paragraph -->
+                  <p class="pnews7"> 
+                      <a href="news7.html">
+                            Turkey Central <br> Bank Warns <br> Lenders Against <br> Sending Dollars <br> Abroad
+                      </a></p>
+                  <!-- horizontal line at the end of 'Economics' -->
+                  <div class="vl14"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- latest news 'Technology' title -->
+                  <p class="Technology1"> Technology </p>
+                  <!-- latest news 'Technology' paragraph -->
+                  <p class="pnews8"> 
+                      <a href="news8.html">
+                            Apple Makes Major <br> Progress on <br> No-Prick Blood  <br>  Glucose Tracking  <br> for Its Watch
+                      </a></p>
+                  <!-- horizontal line at the end of 'Technology' -->
+                  <div class="vl15"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- latest news 'Economics' title -->
+                  <p class="Economics1"> Economics </p>
+                  <!-- latest news 'Economics' paragraph -->
+                  <p class="pnews9"> 
+                      <a href="news9.html">
+                            Africa's Biggest <br> Economy Is <br> Crumbling as <br> Voters Pick <br> New President
+                      </a></p>
+                  <!-- horizontal line at the end of 'Economics' -->
+                  <div class="vl16"> </div>
+              </div>
+              
+              <div class="col-2">
+                  <!-- latest news 'Deals' title -->
+                  <p class="Deals"> Deals </p>
+                  <!-- latest news 'Deals' paragraph -->
+                  <p class="pnews10"> 
+                      <a href="news10.html">
+                            Pioneer Natural <br> Resources <br> Considers <br> Buying Explorer <br> Range
+                      </a></p>
+                  <!-- horizontal line at the end of 'Deals' -->
+                  <div class="vl17"> </div>
+              </div>
+              
+              <!-- opinions part -->
+              <div class="col-2">
+                  <!-- opinions title -->
+                  <p class="Opinions"> Opinions </p>
+                  
+                  <!-- first opinion name -->
+                  <p class="opinionname1"> Clive Crook </p>
+                  <!-- first opinion title -->
+                  <p class="opinion1"> 
+                      <a href="news10.html">
+                            In Ukraine, Resistance Must Be <br> Balanced With Appeasement
+                      </a></p>
+                  <!--horizontal line after first opinion-->
+                  <div class="vl19"> </div>
+                  
+                  <!-- second opinion name -->
+                  <p class="opinionname2"> Martin Ivens </p>
+                  <!-- second opinion title -->
+                  <p class="opinion2"> 
+                      <a href="news11.html">
+                            Are Britain's Tech Dreams <br> Powered By Hot Air?
+                      </a></p>
+                  <!--horizontal line after second opinion-->
+                  <div class="vl20"> </div>
+              </div>
+          </div>
+                  
+                  <div class="row">
+                      <div class="col-6">
+                          <!--horizontal line between more news and latest news-->
+                          <div class="vl7"> </div>
+                      </div>
+                      
+                      <div class="col-6">
+                          <!--horizontal line between opinions and newsletter-->
+                          <div class="vl8"> </div>
+                      </div>
+                  </div>
+
+          <div class="row">
+              <!-- more news part -->
+              <div class="col-6">
+                  <!-- first more news image -->
+                  <img class="news13" alt="news13" src="news_images/news5.avif">
+                  <!-- first more news paragraph -->
+                  <p class="pnews13"> 
+                      <a href="news13.html">
+                            Highly trained Whistler Ski Patrol keeps a <br> watchful eye over Canada’s largest ski resort
+                      </a></p>
+                  <!--horizontal line after first more news-->
+                  <div class="vl23"> </div>
+                  
+                  <!-- second more news image-->
+                  <img class="news14" alt="news14" src="news_images/news6.avif">
+                  <!-- second more news paragraph-->
+                  <p class="pnews14"> 
+                      <a href="news14.html">
+                            Meeting of Venus and Jupiter, spectacular view <br> of the moon to offer reminder of space missions <br> to come
+                      </a></p>
+                  <!--horizontal line after second more news-->
+                  <div class="vl24"> </div>
+                  
+                  <!-- third more news image-->
+                  <img class="news15" alt="news15" src="news_images/news7.avif">
+                  <!-- third more news paragraph-->
+                  <p class="pnews15"> 
+                      <a href="news15.html">
+                            Rihanna’s Super Bowl show was a masterclass in <br> the new business of entertainment
+                      </a></p>
+                  <!--horizontal line after third more news-->
+                  <div class="vl25"> </div>
+                  <!-- horizontal line under more news -->
+                  <div class="vl26"> </div>
+                  
+              </div>
+              
+              <div class="col-6">
+                  <!-- horizontal line under opinions part --> 
+                  <div class="vl27"> </div>
+                  
+                  <!-- news letter part -->
+                  <!--F. Pop, 'CodePen HomeNewsletter Design - #068 of #100Days100Projects', [source code]. https://codepen.io/FlorinPop17/pen/XWWQL-->
+                  <p25 class="newsletter">
+                      <h9> Subscribe to our Newsletter</h9>
+                      <br>
+                      <p26>Our weekly newsletter provides you with the latest and most important happenings in the industry.</p26>
+                      <div class="form-control">
+                            <input type="text" class="input2" placeholder="Enter e-mail adress" />
+                            <button class="btn11">Subscribe</button>
+                      </div> 
+                  </p25>
+                  
+                  <!-- social media icons -->
+                  <!--E. Sangma, 'Social Media Icons hover effect', [source code]. https://codepen.io/ephs23/pen/NeQZGx-->
+                       <ul2>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-facebook-f icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                          <li>
+                            <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                    </ul2>  
+                  
+                  <div class="vl8"> </div>
+              </div>
+          </div>
+
+      <!-- video gallery -->
+      <!--Mr. Web Designer, 'How To Make A Responsive Video Playlist Using HTML CSS & JavaScript', (source code), 2022. https://www.youtube.com/watch?v=w37MUs50xSQ&t=79s-->
+      <div class="container1">
+   <div class="main-video-container">
+      <video src="images/video1.mp4" loop controls class="main-video"></video>
+      <h3 class="main-vid-title">Rep. Barbara Lee on Cutting the Military Budget, Abortion Rights & Why She’s Running for Senate</h3>
+   </div>
+
+   <div class="video-list-container">
+        <!-- videos -->
+      <div class="list active">
+         <video src="images/video2.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video3.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video4.mp4" class="list-video"></video>
+         <h3 class="list-title">“Barbaric Restrictions”: 5 Women Sue Texas After Being Denied Abortions Despite Deadly Health Risks</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video5.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video6.mp4" class="list-video"></video>
+         <h3 class="list-title">“Plantation Politics”: How White Mississippi Lawmakers Want to Seize Power in Majority-Black Jackson</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video7.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video8.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video9.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+      <div class="list">
+         <video src="images/video10.mp4" class="list-video"></video>
+         <h3 class="list-title">Historian Alfred McCoy: As Tensions Rise over Taiwan, U.S. & China “Edging Ever Closer” to War</h3>
+      </div>
+
+   </div>
+
+</div>
+      
+      <!--vertical line under video gallery-->
+      <div class="vl28"> </div>
+      
+      <!-- image slider -->
+      <!--Web Dev Tutorials, ' HTML, CSS & JavaScript - How to Create a Multi Item Image Carousel (w/ Tiny Slider) - BUTTON VERSION', 2022. [source code]. https://www.youtube.com/watch?v=fNx_ELbe1Vc-->
+      <section id="slider">
+          <div class="container2">
+              <div class="subcontainer">
+                  <div class="silder_wrapper">
+                      <div class="controller">
+                          <div>
+                              <!-- image slider title -->
+                              <h2> Most read articles </h2>
+                          </div>
+                          <div id="controls">
+                              <!-- previous and next buttons -->
+                              <button class="previous"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                              <button class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="my_slider">
+                          <div>
+                              <div class="slide">
+                                  <!-- first image -->
+                                  <div class="slide_img img_1">
+                                      <a href="learnmore.html"> Learn more </a>
+                                  </div>
+                                  <br>
+                                  <div>
+                                      <p> New residences at McMaster University aim to ease student-housing crunch </p>
+                                  </div>
+                              </div>    
+                          </div>
+                          
+                          <div>
+                              <div class="slide">
+                                  <!-- secomd image -->
+                                  <div class="slide_img img_2">
+                                      <a href="learnmore.html"> Learn more </a>
+                                  </div>
+                                  <br>
+                                  <div>
+                                      <p> Arsenal back on top as Manchester City held to draw in English Premier League </p>
+                                  </div>
+                              </div>    
+                          </div>
+                          
+                          <div>
+                              <div class="slide">
+                                  <!-- third image -->
+                                  <div class="slide_img img_3">
+                                      <a href="learnmore.html"> Learn more </a>
+                                  </div>
+                                  <br>
+                                  <div>
+                                      <p> Expat buyer shaves $90,870 off home with Rocky Mountain vibe </p>
+                                  </div>
+                              </div>    
+                          </div>
+                          
+                          <div>
+                              <div class="slide">
+                                  <!-- forth image -->
+                                  <div class="slide_img img_4">
+                                      <a href="learnmore.html"> Learn more </a>
+                                  </div>
+                                  <br>
+                                  <div>
+                                      <p> The four ugliest cars at the Toronto auto show </p>
+                                  </div>
+                              </div>    
+                          </div>
+                          
+                          <div>
+                              <div class="slide">
+                                  <!-- fifth image -->
+                                  <div class="slide_img img_5">
+                                      <a href="learnmore.html"> Learn more </a>
+                                  </div>
+                                  <br>
+                                  <div>
+                                      <p> Peter Herrndorf, media mogul and former National Arts Centre president, dead at 82 </p>
+                                  </div>
+                              </div>    
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+                  
+      <!--back to top  button-->        
+      <!--Developer Filip,' 6 JavaScript examples to make your websites more ENGAGING!', 2021.[source code]. https://www.youtube.com/watch?v=MCRV9ajSfoc-->
+      <button class="backtotop" onClick="toTop()"> Back to top</button>
+                  
+      <!-- help bar buttons -->
+      <section id="help_bar"> 
+          
+          <div class="row">
+              <div class="col-12">
+                  <!--help menu container-->
+                  <div class="container3"></div>
+                </div>
+          </div>
+              <div class="row firstbar">
+              <!-- first bar -->
+                  <div class="col-1">
+                  <button class="privacy" onclick="window.location.href='privacy.html';"> Privacy </button> 
+                  </div>
+                  <div class="col-1">
+                  <button class="contactus" onclick="window.location.href='contactus.html';"> Contact us </button> 
+                  </div>
+                  <div class="col-1">
+                  <button class="copyright" onclick="window.location.href='copyright.html';"> Copyright policy </button> 
+                  </div>
+                  <div class="col-1">
+                  <button class="termsofuse" onclick="window.location.href='termsofuse.html';"> Terms of use </button> 
+                  </div>
+                  <div class="col-1">
+                  <button class="advertise" onclick="window.location.href='advertise.html';"> Advertise </button> 
+                    </div>
+                  <div class="col-1">
+                  <button class="subscriptions" onclick="window.location.href='subscriptions.html';"> Subscriptions </button> 
+                  </div>
+                  <div class="col-1">
+                  <button class="workwithus" onclick="window.location.href='workwithus.html';"> Work with us </button>
+                  </div>
+                  <div class="col-1">
+                  <button class="accessibility" onclick="window.location.href='Accessibility.html';"> Accessibility </button>
+                  </div>
+                  <div class="col-1">
+                  <button class="subscriptions" onclick="window.location.href='subscriptions.html';"> Subscriptions </button>
+                  </div>
+                  <div class="col-1">
+                  <button class="termsofsale" onclick="window.location.href='termsofsale.html';"> Terms of sale </button>
+                  </div>
+                  <div class="col-2">
+                  <button class="aboutus" onclick="window.location.href='aboutus.html';"> About us </button> 
+                  </div>
+              </div>
+              
+              <!-- second bar --> 
+          <div class="row">
+              <div class="col-12">
+              <div class="secondbar">
+                  <button class="world1" onclick="window.location.href='index.html';"> World </button> 
+                  <button class="politics1" onclick="window.location.href='politics.html';"> Politics </button> 
+                  <button class="health1" onclick="window.location.href='health.html';"> Health </button> 
+                  <button class="sports9" onclick="window.location.href='sports.html';"> Sports </button> 
+                  <button class="arts1" onclick="window.location.href='arts.html';"> Arts </button> 
+                  <button class="science1" onclick="window.location.href='science.html';"> Science </button> 
+                  <button class="realestate1" onclick="window.location.href='realestate.html';"> Real estate </button>
+                  <button class="travel1" onclick="window.location.href='travel.html';"> Travel </button>
+                  <button class="fashion" onclick="window.location.href='fashion.html';"> Fashion </button>
+                  <button class="business1" onclick="window.location.href='business1.html';"> Business </button>
+                  <button class="food1" onclick="window.location.href='food.html';"> Food </button> 
+                  <button class="weather1" onclick="window.location.href='weather.html';"> Weather </button> 
+                  <button class="books1" onclick="window.location.href='books.html';"> Books </button> 
+                  <button class="technology3" onclick="window.location.href='technology.html';"> Technology </button> 
+              </div>
+              </div>
+              </div>
+      </section>
+                  </div>
+
+      <script src="index.js"></script>
+      
+         
+  </body>
+    
+</html>

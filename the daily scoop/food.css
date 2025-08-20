@@ -1,0 +1,1289 @@
+body {
+  font-family: Libre Caslon Text;
+  background-color: #FFAB91;
+}
+
+/* three line menu */
+.hamburger-icon {
+  z-index: 3;
+  margin-top: 5%;
+  margin-left: -7%;
+  padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+  height: 1px;
+  width: 20px;
+  background-color: black;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+.menu-container {
+    width: 100%;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .body-text {
+display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: black;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: translate(0%, -90%) rotate(45deg);
+  background-color: black;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color: white;
+  position: fixed;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  width: 350px;
+  height: 650px;
+  transition: 0.6s ease-in-out;
+  border: 1px solid black;
+  z-index: 3;
+}
+
+.menu-pane p {
+  color: black;
+  font-size: 0.6em;
+}
+
+.menu-pane nav {
+  padding: 10%;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  padding: 10%;
+  display: inline-block;
+  list-style: none;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+
+.menu-pane li {
+  padding-bottom: 5px;
+  font-size: 1em;
+  margin-left: 130px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.menu-links li:hover a {
+  color: #FFAB91;
+}
+
+
+input.hamburger-checkbox {
+  z-index: 3;
+  left: 5vw;
+  opacity: 0;
+  height: 6vh;
+  position: absolute;
+  top: 5vh;
+  width: 10vw;
+}
+
+/* search bar */
+.search {
+    margin-top: 1.3%;
+    transform: translate(-50%,-50%);
+    width: 1.302%;
+    height: 3.050%;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: -3%;
+    transition: width 0.5s;
+}
+
+.search.active {
+    width: 9.766%;
+}
+
+.search input {
+    top: 2px;
+    width: calc(100% - 45px);
+    border: none;
+    font-size: 10px;
+    padding: 0 10px;
+    color: #666;
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    outline: none;
+}
+
+.icon1 {
+    height:30px;
+    top: 2px;
+    right: -5px;
+    transition: 0.5s;
+    border-radius: 4px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.search.active .icon1 {
+    background-color: darkcyan;
+}
+
+.icon1:before {
+    position: absolute;
+    left: 5px;
+    height: 12px;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.5s;   
+    content: '';
+    top: 5px;
+    width: 12px;
+    border: 2px solid #262626;
+}
+
+.search.active .icon1:before {
+    position: absolute;
+    left: 6px;
+    width: 9px;
+    background: transparent;
+    border-right: 2px solid #fff;
+    transition: 0.5s;   
+    content: '';
+    top: 3.5px;
+    height: 15px;
+    border: none;
+    border-radius: 0;	
+    transform: rotate(45deg);
+}
+
+.icon1:after {
+    left: 17px;
+    border-left: 2px solid #262626;
+    content: '';
+    top: 12px;
+    width: 9px;
+    background: transparent;
+    border-radius: 0;
+    transition: 0.5s;   
+    position: absolute;
+    height: 9px;
+    transform: rotate(-45deg);
+}
+
+.search.active .icon1:after {
+    position: absolute;
+    left: 6px;
+    height: 15px;
+    border: none;
+    border-radius: 0;
+    transform: rotate(-45deg);
+    content: '';
+    top: 10px;
+    width: 9px;
+    background: transparent;
+   border-right: 2px solid #fff;
+   transition: 0.5s;   
+}
+
+/* food head */
+.food_head {
+    margin-left: -65.1%;
+    font-weight: 400;
+    width: 100.1%;
+    font-size: 100.1%;
+    margin-top: 7.1%;
+    font-family: helvetica;
+}
+
+/*logo*/
+.logo {
+    width: 60%;
+    margin-left: -45%;
+    margin-top: 7%;
+}
+
+/*subscribe button*/
+.subscribe {
+    margin-left: 50%;
+    font-size: 60%;
+    margin-top: 3%; 
+    width: 100%;
+    max-height: 30px;
+    border: none;
+    color: white;
+    height: 4%;
+    text-align: center;
+    padding: 8px 28.1px;
+    background-color: darkcyan;
+}
+
+/*login button*/
+.login {
+    max-height: 30px;
+    margin-left: 58%;
+    margin-top: 3%; 
+    width: 60%;
+    background-color: darkcyan;
+    height: 4%;
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    font-size: 60%;
+}
+
+/*horizontal line after menu part*/
+.vl1 {
+    width: 783%;
+    margin-left: -293%;
+    box-shadow: 5px 1px 2px 1px lightgray; 
+    margin-top: 6%;
+    border-bottom: 1px solid gray;
+}
+
+/*food title*/
+.food_title {
+    margin-top: 2%;
+    font-family: helvetica;
+    width: 80%;
+    margin-left: 3%;
+    font-size: 180%;
+    font-weight: 900;
+    height:40px;
+}
+
+/*horizontal line under food title*/
+.vl2 {
+    margin-left: 0.1%;
+    width: 98%;
+    margin-top: 0.1%;
+    border-bottom: 1px solid gray;
+}
+
+/*horizontal line after food title bar*/
+.vl3 {
+    width: 98%;
+    margin-top: 0.5%;
+    border-bottom: 2px solid gray;
+    margin-left: 0%;
+}
+
+/*Resturant reviews title*/
+.resturant_reviews {
+    width: 40%;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    letter-spacing: 0.03em;
+    margin-top: -40%;
+    margin-left: 7%;
+    font-size: 55%;
+    font-weight: 500;
+    text-size-adjust: 100%;
+    font-family: helvetica;
+    color: #000;
+}
+
+/*vertical line after previous title*/
+.vl4 {
+    border-left: 1px solid gray;
+    height: 15px;
+    margin-top: -5%;
+    margin-left: 48%;
+    width: 10%;
+}
+
+/*recipes title*/
+.recipes {
+    text-transform: uppercase;
+    font: inherit;
+    background-color: white;
+    border: none;
+    letter-spacing: 0.03em;
+    margin-top: -40%;
+    font-family: helvetica;
+    margin-left: -59%;
+    font-size: 55.1%;
+    color: #000;
+    width: 20%;
+    font-weight: 500;
+    text-size-adjust: 100.1%;
+}
+
+/*vertical line after previous title*/
+.vl5 {
+    border-left: 1px solid gray;
+    height: 15px;
+    margin-top: -5%;
+    margin-left: -37%;
+    width: 10%;
+}
+
+/*Food_&_drink title*/
+.food_drink {
+    font-weight: 500;
+    font: inherit;
+    background-color: white;
+    letter-spacing: 0.03em;
+    margin-top: -40%;
+    cursor: pointer;
+    margin-left: -140%;
+    font-family: helvetica;
+    font-size: 55%;
+    color: #000;
+    border: none;
+    text-transform: uppercase;
+    text-size-adjust: 100.1%;
+}
+
+/*vertical line after previous title*/
+.vl6 {
+    margin-top: -5%;
+    border-left: 1px solid gray;
+    height: 15px;
+    margin-left: -108%;
+}
+
+/*slow_food_fast*/
+.slow_food_fast {	
+    cursor: pointer;
+    font-family: helvetica;
+    background-color: white;
+    border: none;
+    letter-spacing: 0.03em;
+    font: inherit;
+    margin-top: -40%;
+    font-weight: 500;
+    margin-left: -212%;
+    text-transform: uppercase;
+    text-size-adjust: 100.1%;
+    font-size: 55%;
+    color: #000;
+}
+
+/*first foood news image*/
+.food1 {
+   max-height: 700px;
+    width: 100.1%;
+    height: 100%;
+    min-height: 700px;
+    margin-top: 4%;
+}
+
+/*first foood news sqaure*/
+.square {
+    height: 45%;
+    width: 25%;
+    background-color: white;
+    margin-top: -37%;
+    z-index: 1;
+    position: relative;
+    margin-left: 6%;
+    box-shadow: 0 2px 2px 2px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+/*first foood news head*/
+.food1head {
+    font-family: helvetica;
+    font-weight: 100;
+    margin-top: -18%;
+    position: relative;
+    font-size: 150%;
+    margin-left: 9.7%;
+    z-index: 2;
+}
+
+.food1head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+.food1head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: coral;
+}
+
+/*first foood news paragraph*/
+.food1p {
+    position: relative;
+    margin-left: 10.1%;
+    font-family: helvetica;
+    z-index: 2;
+    font-weight: 100;
+    margin-top: 3.1%;
+    font-size: 110%;
+}
+
+.food1p a:link {
+    color: darkslategrey;
+    text-decoration: inherit;
+    background: none;
+}
+
+
+.food1p a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*first foood news circle*/
+.circle {
+    height: 110px;
+    width: 9%;
+    z-index: 2;
+    background-color: maroon;
+    border-radius: 50%;
+    margin-top: -23%;
+    position: relative;
+    margin-left: 3%;
+}
+
+/*first foood news circle paragraph*/
+.circlep {
+    z-index: 2;
+    font-family: helvetica;
+    margin-top: -6.5%;
+    margin-left: 5.2%;
+    font-size: 110%;
+    position: relative;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+/*add to wishlist button*/
+.btn5 {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    font-family: "Sentinel A","Sentinel B",Georgia,serif; 
+    background: maroon;
+    transition: opacity 0.1s ease-out,background 0.1s ease-out;
+    position: relative;
+    border-radius: 2px;
+    color: #FFF;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3),0 1px 3px rgba(0,0,0,0.4);
+    padding: 6px 20px 7px; 
+    font-size: 18px;
+    line-height: 23px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3),0 1px 3px rgba(0,0,0,0.4);
+    min-width: 50px;
+    border: 1px solid 4383c5;
+    cursor: pointer;
+    font-weight: 600px; 
+    text-decoration: none;
+    transition: opacity 0.1s ease-out,background 0.1s ease-out;
+    z-index: 2;
+    margin-left: 80%;
+    margin-top: 0%;
+}
+
+
+.btn5:hover
+{
+    background-color: orangered; 
+    color: white;
+}
+
+/*horizontal line after first food news*/
+.vl7 {
+    border-bottom: 1px solid black;
+    margin-left: 0.1%;
+    width: 100.1%;
+    margin-top: 33%;
+}
+
+/*what to cook title*/
+.whattocook {
+    font-family: helvetica;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    font-size: 170%;
+}
+
+/*first news image in what to cook*/
+.food2 {
+    margin-top: 8.1%;
+    width: 100.1%;
+}
+
+/*first news head in what to cook*/
+.food2head {
+    font-family: helvetica;
+    margin-left: 0%;
+    font-size: 150%;
+    margin-top: 0%;
+    font-weight: bold;
+}
+
+.food2head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+
+.food2head a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+
+/*second news image in what to cook*/
+.food3 {
+    width: 100%;
+    margin-top: 8%;
+}
+
+/*third news image in what to cook*/
+.food4 {
+    width: 100%;
+    margin-top: 8%;
+} 
+
+/*forth news image in what to cook*/
+.food5 {
+    width: 100%;
+    margin-top: 8%;
+}
+
+/*next page button*/
+.btn20 {
+    font-family: helvetica;
+    background-color: white;
+    vertical-align: baseline;
+    letter-spacing: 0.03em;
+    width: 50%;
+    padding: 14px 24px;
+    margin-top: 10%;
+    margin-left: 50%;
+    text-size-adjust: 100%;
+    font-weight: 500;
+    display: inline-block;
+    color: #000;
+    font: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 55%;
+    border: 1px solid black;
+}
+
+/*horizontal line between what to cook and recipes*/
+.vl8 {
+    border-bottom: 1px solid black;
+    margin-top: 2.1%;
+    width: 100.1%;
+    margin-left: 0%;
+}
+
+div1 {
+    width: 80%;
+    height: 150px;
+    outline: 1px solid black;
+    transform: translate(0px,50px);
+}
+
+/*image class for first and forth recipes*/
+.recipe1 {
+    width: 40%;
+    outline: 1px solid black;
+    margin-left: 60%;
+    margin-top: 4.5%;
+}
+
+/*head class for first and forth recipes*/
+.recipe1head {
+    font-weight: 500;
+    width: 100%;
+    margin-top: -24%;
+    margin-left: 2%;
+    font-family: helvetica;
+    font-size: 95%;
+}
+
+.recipe1head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+
+.recipe1head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*date class for first and forth recipes*/
+.recipe1n {
+    width: 100%;
+    margin-top: 4%;
+    font-weight: 500;
+    margin-left: 2%;
+    font-family: helvetica;
+    font-size: 70%;
+}
+
+div2 {
+    width: 80%;
+    height: 150px;
+    outline: 1px solid black;
+    transform: translate(0px,50px);
+}
+
+/*image class for second,third,fith and sixth recipes*/
+.recipe2 {
+    width: 40%;
+    margin-left: 60%;
+    outline: 1px solid black;
+    margin-top: 4.5%;
+}
+
+/*head class for second,third,fith and sixth recipes*/
+.recipe2head {
+    font-weight: 500;
+    width: 100.1%;
+    margin-left: 2%;
+    font-family: helvetica;
+    font-size: 95%;
+    margin-top: -24%;
+}
+
+.recipe2head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+.recipe2head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*date class for second,third,fith and sixth recipes*/
+.recipe2n {
+    width: 100%;
+    margin-top: 4%;
+    font-weight: 500;
+    margin-left: 2%;
+    font-family: helvetica;
+    font-size: 70%;
+}
+
+div3 {
+    width: 80%;
+    height: 150px;
+    outline: 1px solid black;
+    transform: translate(0px,50px);
+}
+
+/*horizontal line between recipes and more recipes*/
+.vl9 {
+    margin-top: 7%;
+    border-bottom: 1px solid black;
+    margin-left: 0%;
+    width: 100.1%;
+}
+
+/*more recipes first image*/
+.morerecipe1 {
+    margin-left: 1%;
+    margin-top: 6%;
+    width: 25%;
+}
+
+/*more recipes first head*/
+.morerecipe1head {
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-top: -14%;
+    font-size: 130%;
+    font-family: helvetica;
+}
+
+.morerecipe1head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+.morerecipe1head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*more recipes first paragraph*/
+.morerecipe1p {
+    font-weight: 400;
+    margin-left: 30%;
+    font-size: 80%;
+    font-family: helvetica;
+   margin-top: 2%;
+}
+
+.morerecipe1p a:link {
+    color: darkslategrey;
+    text-decoration: inherit;
+    background: none;
+}
+
+
+.morerecipe1p a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: blue;
+}
+
+/*more recipes second image*/
+.morerecipe2 {
+    margin-left: 1%;
+    width: 25%;
+    margin-top: 6%;
+}
+
+/*more recipes second head*/
+.morerecipe2head {
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-top: -14%;
+    font-size: 130%;
+    font-family: helvetica;
+}
+
+.morerecipe2head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+.morerecipe2head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*more recipes second paragraph*/
+.morerecipe2p {
+    font-weight: 400;
+    margin-left: 30%;
+    font-size: 80%;
+    font-family: helvetica;
+    margin-top: 2.1%;
+}
+
+.morerecipe2p a:link {
+    color: darkslategrey;
+    text-decoration: inherit;
+    background: none;
+}
+
+
+.morerecipe2p a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: blue;
+}
+
+/*more recipes third image*/
+.morerecipe3 {
+    margin-left: 1%;
+    width: 25%;
+    margin-top: 4%;
+}
+
+/*more recipes third head*/
+.morerecipe3head {
+    font-weight: bolder; 
+    margin-left: 30%;
+    margin-top: -14%;
+    font-size: 130%;
+    font-family: helvetica;
+}
+
+.morerecipe3head a:link {
+    color: black;
+    text-decoration: inherit;
+    background: none;
+}
+
+.morerecipe3head a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: gray;
+}
+
+/*more recipes third paragraph*/
+.morerecipe3p {
+    font-weight: 400;
+    margin-left: 30%;
+    font-size: 80%;
+    font-family: helvetica;
+    margin-top: 2.1%;
+}
+
+.morerecipe3p a:hover {
+    background: none;
+    text-decoration: inherit;
+    color: blue;
+}
+
+.morerecipe3p a:link {
+    color: darkslategrey;
+    text-decoration: inherit;
+    background: none;
+}
+
+/*next page button*/
+.btn10 {
+    cursor: pointer;
+    font-size: 55.1%;
+    border: 1px solid black;
+    letter-spacing: 0.03em;
+    width: 15.1%;
+    padding: 14.1px 24.1px;
+    margin-top: 10.1%;
+    margin-left: 80.1%;
+    text-size-adjust: 100.1%;
+    font-family: helvetica;
+    font-weight: 500;
+    background-color: white;
+    display: inline-block;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/*vertical line between more recipes and newsletter*/
+.vl22 {
+    margin-top: 35.1%;
+    border-left: 1px solid gray;
+    margin-left: 60.1%;
+    height: 95.1%;
+}
+
+/*newsletter part*/
+.newsletter {
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    width: 25.1%;
+    height: 270.1px;
+    box-shadow: 5.1px 0 5.1px 5.1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 25.1px;
+    margin-top: 8.1%;
+    margin-left: -2.1%;
+    align-items: center;
+    padding: 30.1px;
+    justify-content: center;
+}
+
+.newsletter h9 {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.newsletter p2 {
+	margin: 10.1px;
+               color: #312940;
+}
+
+.form-control {
+	margin: 30.1px 0.1 20.1px;
+               position: relative;
+}
+
+.input2 {
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+	display: block;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	height: 42px;
+	padding: 12px 25px;
+	width: 100%;
+}
+
+.btn11 {
+	background-color: #312940;
+	border: 0;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 14px;
+	height: 42px;
+	padding: 12px 25px;
+	position: absolute;
+	margin-top: -14.3%;
+	right: 0;
+}
+
+/*social media*/
+ul1 {
+  display: flex;
+  transform: translate(-50%, -50%);
+  margin-top: 138%;
+  margin-left: 76%;
+  width: 100%;
+}
+
+ul1 li {
+  list-style: none;
+}
+
+ul1 li a {
+  z-index: 1;
+  height: 20.1px;
+  text-align: center;
+  font-size: 14.1px;
+  width: 20.1px;
+  display: block;
+  background-color: #fff;
+  position: relative;
+  line-height: 80.1px;
+  margin: 0 9.9px;
+  border-radius: 49.9%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+ul1 li a .icon {
+  margin-left: -7.1px;
+  transition: .5s;
+  position: absolute;
+  color: #262626;
+  z-index: 3;
+}
+
+ul1 li a:hover .icon {
+  transform: rotateY(360deg);
+  color: #fff;
+}
+
+ul1 li a:before {
+  content: "";
+  height: 99.9%;
+  left: 0;
+  transition: .5s;
+  top: 99.9%;
+  width: 99.9%;
+  background: #f00;
+  z-index: 2;
+  position: absolute;
+}
+
+ul1 li a:hover:before {
+  top: 0;
+}
+
+ul1 li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul1 li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+ul1 li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+ul1 li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+/*help bar container*/
+.container3 {
+    margin-top: 7%;
+}
+
+/*first bar row*/
+.firstbar {
+    margin-top: 10%;
+    background-color: lightsteelblue;
+    width: 100.9%;
+    margin-left: -1%;
+}
+
+.firstbar .privacy {
+  margin-left: 7.5%;
+  background-color: inherit;
+  font-size: 10.1px;
+  margin-top: 1.5%;
+  border: none;
+  cursor: pointer;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .contactus {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  margin-left: -20.1%;
+  background-color: inherit;
+  width: 150.1%;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .copyright {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  margin-left: -35.1%;
+  background-color: inherit;
+  width: 200.1%;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .termsofuse {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  width: 150.1%;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .advertise {
+  font-size: 10.1px;
+  padding: 14.1px 28.1px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.firstbar .subscriptions {
+  padding: 14.1px 28.1px;
+  cursor: pointer;
+  border: none;
+  font-size: 10.1px;
+  background-color: inherit;
+}
+
+.firstbar .workwithus {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  width: 150.1%;
+  font-size: 10.1px;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .aboutus {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  margin-left: 25.1%;
+  padding: 14.1px 28.1px;
+}
+
+.firstbar .accessibility {
+  font-size: 10.1px;
+  padding: 14.1px 28.1px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.firstbar .subscriptions {
+  padding: 14.1px 28.1px;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 10.1px;
+  border: none;
+}
+
+.firstbar .termsofsale {
+  border: none;
+  font-size: 10.1px;
+  cursor: pointer;
+  background-color: inherit;
+  width: 150.1%;
+  padding: 14.1px 28.1px;
+  margin-left: 25.1%;
+}
+
+/*second bar row*/
+.secondbar {
+    margin-left: 0.1%;
+    margin-top: -1%;
+    background-color: lightsteelblue;
+    width: 99.9%;
+}
+
+.secondbar .world1 {
+  margin-left: -1.1%;
+  font-size: 10.1px;
+  margin-top: 1.1%;
+  padding: 14.1px 28.1px;
+  height: 80.1px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.secondbar .politics1 {
+  border: none;
+  font-size: 10.1px;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .health20 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .sports1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .arts1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .science1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .realestate1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .travel1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .fashion {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .business1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .food30 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .weather1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .books1 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+.secondbar .technology3 {
+  font-size: 10.1px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  display: inline-block;
+  padding: 14.1px 28.1px;
+}
+
+/*back to top button*/
+.backtotop {
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    left: 47%;
+    color: white;
+    background-color: cadetblue;
+    font-size: 120%;
+    margin-top: 3%;
+}
+
